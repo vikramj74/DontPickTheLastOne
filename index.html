@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Don't pick the last one </title>
+		<meta charset="utf-8" />	
+		<meta author="Vikram Jaswal" />	
+		<meta description="A simple pick stick game.Build using jQuery UI lib" />	
+
+		<!-- Using the defer attribute to load jquery and jquery ui asynchronously , but in order -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>		
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js" defer></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+		
+		<!-- My script -->
+		<script type="text/javascript" src="script_mod.js" defer></script>
+		<link rel="stylesheet" href="style_mod.css" />
+		
+	</head
+	<body>
+
+		<div class="stick_container" id="stick_container_1">
+			
+			<div class="heading" id="main_container">
+				<p>MAIN STICK CONTAINER</p>
+			</div>
+
+			<!-- set of 20 sticks -->
+			<div class="stick" id="stick_1">		</div>		
+			
+			<div class="stick" id="stick_2">		</div>		
+			
+			<div class="stick" id="stick_3">		</div>		
+			
+			<div class="stick" id="stick_4">		</div>		
+			
+			<div class="stick" id="stick_5">		</div>		
+			
+			<div class="stick" id="stick_6">		</div>		
+			
+			<div class="stick" id="stick_7">		</div>		
+			
+			<div class="stick" id="stick_8">		</div>		
+			
+			<div class="stick" id="stick_9">		</div>		
+			
+			<div class="stick" id="stick_10">		</div>		
+			
+			<div class="stick" id="stick_11">		</div>			
+			
+			<div class="stick" id="stick_12">		</div>		
+			
+			<div class="stick" id="stick_13">		</div>		
+			
+			<div class="stick" id="stick_14">		</div>		
+			
+			<div class="stick" id="stick_15">		</div>		
+			
+			<div class="stick" id="stick_16">		</div>		
+			
+			<div class="stick" id="stick_17">		</div>		
+			
+			<div class="stick" id="stick_18">		</div>		
+			
+			<div class="stick" id="stick_19">		</div>		
+			
+			<div class="stick" id="stick_20">		</div>
+
+			<div class="stick" id="stick_21">		</div>
+
+		</div>
+
+		<div id="buzzer" class="circular_btn">
+			<p id="buzz_p">BUZZ</p>
+			<p id="turn_p">(CPU)</p>
+		</div>
+
+		<div class="stick_store" id="user_stick_store">
+			<p>Your Sticks</p>
+		</div>
+
+		<div id="start_btn" class="circular_btn">
+			<p id="start_p">PLAY</p>
+		</div>
+
+		<div id="status_box">
+		 	<p id="status_p">Click on the PLAY button to start</p>
+		 </div>
+
+		<div class="stick_store" id="cpu_stick_store">
+			<p>CPU's Sticks</p>
+			<p id="cpu_thinks"></p>
+		</div>
+
+		<button id="help_button" onclick="help_alert();">How To Play</button>
+	</body>
+</html>

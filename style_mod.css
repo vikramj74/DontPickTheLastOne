@@ -1,0 +1,118 @@
+.stick {
+	height:2em;
+	width:1em;
+	background-color:yellow;
+	border-radius:0.25em;
+	margin: 1em 1.25em;
+	display:inline-block;
+}
+.stick_container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:1em;
+	text-align:center;
+	background-color:#87CEEB;
+	border-radius:0.5em;
+}
+.heading p{
+	color:yellow;
+	display:block;
+	font-weight:bold;
+	font-family:ubuntu;
+	font-size:1.5em;
+}
+.stick_store{
+	display:inline-block;
+	height:25em;
+	width:30em;
+	background-color:#87CEEB;
+	text-align:center;
+	border-radius:0.75em;
+	font-family:ubuntu;
+}
+.circular_btn {
+	border-radius:100%;
+	text-align:center;
+	font-family:ubuntu;
+}
+.picked_stick {
+	height:2em;
+	width:1em;
+	background-color:#8B3626;
+	border-radius:0.25em;
+	margin: 1em 1.25em;
+	display:inline-block;
+}
+#user_stick_store {
+	color:red;
+
+
+}
+#cpu_stick_store {
+	margin-right:1em;
+	position:absolute;
+	right:0em;
+	color:blue;
+}
+#buzzer {
+	background-color:red;
+	color:white;
+	
+	display:block;
+	
+	height:6.5em;
+	width:6.5em;
+	padding-top:1.25em;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+#buzz_p {
+	margin-bottom:0.5em;
+
+}
+#turn_p {
+	margin-top:0.5em;
+
+}
+#start_btn {
+	display:inline-block;
+	background-color:green;
+	color:white;
+	height:5em;
+	width:5em;
+	position:relative;
+	left:11.5em;
+}
+#start_p {
+	padding-top:0.75em;
+}
+#status_box {
+	height:5em;
+	width:15em;
+	display:inline-block;
+	background-color:#87CEEB;
+	position:absolute;
+	bottom:2em;
+	left:42%;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:ubuntu;
+	text-align: center;
+	border-radius:0.5em;
+}
+#status_p {
+	background-color:white;
+	color:orange;
+}
+#help_button {
+	background-color:white;
+	color:red;
+	border-style:solid;
+	border-color:red;
+	position:relative;
+	top:10em;
+	left:6em;
+
+}
