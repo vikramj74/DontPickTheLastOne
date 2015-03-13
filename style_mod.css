@@ -45,7 +45,9 @@
 }
 #user_stick_store {
 	color:red;
-
+	position:relative;
+	float:left;
+	margin-right:30%;
 
 }
 #cpu_stick_store {
@@ -53,6 +55,7 @@
 	position:absolute;
 	right:0em;
 	color:blue;
+	float:left;
 }
 #buzzer {
 	background-color:red;
@@ -77,13 +80,15 @@
 
 }
 #start_btn {
-	display:inline-block;
+	display:block;
 	background-color:green;
 	color:white;
 	height:5em;
 	width:5em;
-	position:relative;
-	left:11.5em;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1em;
+	margin-bottom:1em;
 }
 #start_p {
 	padding-top:0.75em;
@@ -101,6 +106,7 @@
 	font-family:ubuntu;
 	text-align: center;
 	border-radius:0.5em;
+	z-index:10;
 }
 #status_p {
 	background-color:white;
@@ -111,8 +117,9 @@
 	color:red;
 	border-style:solid;
 	border-color:red;
-	position:relative;
-	top:10em;
-	left:6em;
-
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+	bottom:-1.5em;
+	left:46.5%;
 }
