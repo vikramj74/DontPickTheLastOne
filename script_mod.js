@@ -68,7 +68,7 @@ function cpu_plays() {
 			console.log("ps = "+document.picked_sticks);
 			document.turn = "user";
 			document.sticks_picked_by_user = 0;
-			$("#buzzer").css("background-color","blue");
+			$("#buzzer").css("background-color","#3232ff");
 			turn_para.text("( your turn )");
 			$("#status_p").text("It's your turn, pick up to 4 sticks and click on the buzzer when done");
 			document.sticks_picked_by_user = 0;
@@ -92,7 +92,7 @@ $(document).ready(
 					turn_para.show();
 					document.picked_sticks = 0;
 					document.sticks_picked_by_user = 0;
-					$("#buzzer").css("background-color","blue");
+					$("#buzzer").css("background-color","#3232ff");
 					$("#status_p").text("It's your turn, pick up to 4 sticks and click on the buzzer when done");
 					document.turn = "user";
 					$("#help_button").hide();
@@ -105,7 +105,7 @@ $(document).ready(
 						return ;
 					else if ( document.turn === "user" ) {
 						if (document.sticks_picked_by_user !== 0 ) {
-							$(this).css("background-color","red");
+							$(this).css("background-color","#CF3B3B");
 							turn_para.text(" ( CPU's turn )");
 							document.turn = "cpu";
 							cpu_plays();
@@ -162,11 +162,11 @@ $(document).ready(
 		$("#help_button").hover(
 			function() {
 				$(this).css("color","white");
-				$(this).css("background-color","red");
+				$(this).css("background-color","#983298");
 
 			},
 			function() {
-				$(this).css("color","red");
+				$(this).css("color","#983298");
 				$(this).css("background-color","white");
 
 			}
