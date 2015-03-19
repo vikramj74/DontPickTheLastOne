@@ -96,6 +96,8 @@ $(document).ready(
 					$("#status_p").text("It's your turn, pick up to 4 sticks and click on the buzzer when done");
 					document.turn = "user";
 					$("#help_button").hide();
+					$("#user_stick_store").animate({"height":"+=4em"},"slow");
+					$("#cpu_stick_store").animate({"height":"+=4em"},"slow");
 				}
 			);
 		$("#buzzer").click(
