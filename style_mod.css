@@ -1,7 +1,7 @@
 .stick {
 	height:2em;
 	width:1em;
-	background-color:yellow;
+	background-color:#FFFF5A;
 	border-radius:0.25em;
 	margin: 1em 1.25em;
 	display:inline-block;
@@ -15,7 +15,7 @@
 	border-radius:0.5em;
 }
 .heading p{
-	color:yellow;
+	color:#FFFF66;
 	display:block;
 	font-weight:bold;
 	font-family:ubuntu;
@@ -23,7 +23,7 @@
 }
 .stick_store{
 	display:inline-block;
-	height:25em;
+	height:20em;
 	width:30em;
 	background-color:#87CEEB;
 	text-align:center;
@@ -38,27 +38,29 @@
 .picked_stick {
 	height:2em;
 	width:1em;
-	background-color:#8B3626;
+	background-color:#844444;
 	border-radius:0.25em;
 	margin: 1em 1.25em;
 	display:inline-block;
 }
 #user_stick_store {
-	color:blue;
+	color:#3232ff;
 	position:relative;
 	float:left;
 	margin-right:30%;
+	font-weight:bold;
 
 }
 #cpu_stick_store {
 	margin-right:1em;
 	position:absolute;
 	right:0em;
-	color:red;
+	color:#CF3B3B;
 	float:left;
+	font-weight:bold;
 }
 #buzzer {
-	background-color:red;
+	background-color:#CF3B3B;
 	color:white;
 	
 	display:block;
@@ -81,7 +83,7 @@
 }
 #start_btn {
 	display:block;
-	background-color:green;
+	background-color:#329932;
 	color:white;
 	height:5em;
 	width:5em;
@@ -94,12 +96,12 @@
 	padding-top:0.75em;
 }
 #status_box {
-	height:5em;
+	height:6.5em;
 	width:15em;
 	display:inline-block;
-	background-color:#87CEEB;
+	background-color:white/*#87CEEB*/;
 	position:absolute;
-	bottom:2em;
+	bottom:12.5em;
 	left:42%;
 	margin-left:auto;
 	margin-right:auto;
@@ -107,19 +109,31 @@
 	text-align: center;
 	border-radius:0.5em;
 	z-index:10;
+	border-style:solid;
+	border-color:#983298;
 }
 #status_p {
-	background-color:white;
-	color:orange;
+	/*background-color:white;*/
+	color:#983298;
 }
 #help_button {
 	background-color:white;
-	color:red;
+	color:#983298;
 	border-style:solid;
-	border-color:red;
+	border-color:#983298;
 	margin-left:auto;
 	margin-right:auto;
 	position:absolute;
-	bottom:-1.5em;
+	bottom:8.5em;
 	left:46.5%;
+	border-radius:0.4em;
+	height:4em;
+	width:7em;
+
+}
+#status_h {
+	font-size:1em;
+	font-family:ubuntu;
+	text-align:center;
+	color:#983298;
 }
