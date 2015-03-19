@@ -153,7 +153,8 @@ $(document).ready(
 							$(this).removeClass("stick");
 							$(this).addClass("picked_stick")
 							if (document.picked_sticks === 21 ) {
-								$("#status_p").text("You chose last. Hence you loose. Better luck next time. Refresh the page to replay.");
+								$("#status_p").text("You chose last. Hence you loose. Better luck next time. \
+									Hit REPLAY or refresh the page to replay.");
 								you_lost_alert();
 								$("#buzz_p").html("REPLAY");
 								$("#turn_p").html("");
