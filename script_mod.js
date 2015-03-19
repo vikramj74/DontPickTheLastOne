@@ -11,7 +11,8 @@ computer .";
 document.you_loose_string = "Unfortunately, you chose the last stick this time. \n\
 So, you loose. Sharpen your thinking skills and please try again.\n\
 Best of luck for the next time. : )";
-
+document.game_finish = false;
+document.reloading = false;
 
 // help alert box
 function help_alert() {
@@ -20,6 +21,11 @@ function help_alert() {
 
 function you_lost_alert() {
 	window.alert(document.you_loose_string);
+}
+
+function reload_game() {
+	location.reload();
+
 }
 
 
@@ -103,9 +109,14 @@ $(document).ready(
 		$("#buzzer").click(
 				function() {
 					// set the buzzer clicked var
-					if ( document.turn === "") 
+					if (document.game_finish === true) {
+						console.log("In true");
+						reload_game();
+						document.reloading = true ;
+					}
+					if ( document.turn === "" ) 
 						return ;
-					else if ( document.turn === "user" ) {
+					else if ( document.turn === "user" && document.reloading !== true ) {
 						if (document.sticks_picked_by_user !== 0 ) {
 							$(this).css("background-color","#CF3B3B");
 							turn_para.text(" ( CPU's turn )");
@@ -143,7 +154,11 @@ $(document).ready(
 							$(this).addClass("picked_stick")
 							if (document.picked_sticks === 21 ) {
 								$("#status_p").text("You chose last. Hence you loose. Better luck next time. Refresh the page to replay.");
-								you_lost_alert();	
+								you_lost_alert();
+								$("#buzz_p").html("REPLAY");
+								$("#turn_p").html("");
+								$("#buzzer").css("background-color","#329932");
+								document.game_finish = true;
 							}	
 						
 						} else {
