@@ -44,7 +44,7 @@
 	display:inline-block;
 }
 #user_stick_store {
-	color:red;
+	color:blue;
 	position:relative;
 	float:left;
 	margin-right:30%;
@@ -54,7 +54,7 @@
 	margin-right:1em;
 	position:absolute;
 	right:0em;
-	color:blue;
+	color:red;
 	float:left;
 }
 #buzzer {
